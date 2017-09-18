@@ -1,0 +1,26 @@
+.wrapper{
+  overflow: hidden; /*~~~DEALING WITH GUTTERING DRAWBACK~~~*/
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium{
+    max-width: 950px;
+  }
+
+  /*~~~removing nested wrapping
+  i.e.,removing the padding upon padding~~*/
+  .wrapper{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--b-margin{
+    @mixin atSmall{
+      margin-bottom: 3.9rem;
+    }
+    margin-bottom: 0.9rem;
+  }
+}
